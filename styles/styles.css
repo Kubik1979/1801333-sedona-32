@@ -1,0 +1,27 @@
+    .welcome-block {
+        background-image: url("../img/background-photo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1200px;
+        height: 485px;
+    }
+
+    .mailing {
+        background-image: url("../img/mailing-background.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1200px;
+        height: 411px;
+    }
+
+    .selection-block {
+        background-image: url("../img/catalog-background.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1200px;
+        height: 408px;
+    }
+
+    .catalog-mailing {
+        background-image: none;
+    }
