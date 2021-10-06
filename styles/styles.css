@@ -1,27 +1,58 @@
-    .welcome-block {
-        background-image: url("../img/background-photo.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 1200px;
-        height: 485px;
-    }
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
 
-    .mailing {
-        background-image: url("../img/mailing-background.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 1200px;
-        height: 411px;
-    }
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+}
 
-    .selection-block {
-        background-image: url("../img/catalog-background.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 1200px;
-        height: 408px;
-    }
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #E5E5E5;
+    color: #000000;
+}
 
-    .catalog-mailing {
-        background-image: none;
-    }
+.main-nav-link,
+.button-hotel-search-form,
+.social-button,
+.footer-phone,
+.hotel-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.welcome-block {
+    background-image: url("../img/background-photo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 485px;
+}
+
+.mailing {
+    background-image: url("../img/mailing-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 411px;
+}
+
+.selection-block {
+    background-image: url("../img/catalog-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 408px;
+}
+
+.catalog-mailing {
+    background-image: none;
+}
