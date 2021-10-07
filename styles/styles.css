@@ -151,8 +151,6 @@ h2 {
     background-image: url("../img/mailing-background.png");
     background-repeat: no-repeat;
     background-position: center;
-    width: 1200px;
-    height: 411px;
 }
 
 .selection-block {
@@ -160,7 +158,8 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     width: 1200px;
-    height: 408px;
+    background-size: cover;
+    background-color: #756257;
 }
 
 .catalog-mailing {
