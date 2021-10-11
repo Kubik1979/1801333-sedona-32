@@ -8,8 +8,9 @@
 </head>
 
 <body class="page-body">
-    <div class="container">
-        <header class="main-header">
+
+    <header class="main-header">
+        <div class="container">
             <nav class="main-navigation">
                 <ul class="site-navigation">
                     <li><a class="main-nav-link navigation-link">Главная</a></li>
@@ -24,10 +25,11 @@
                     <li><a class="main-nav-link" href="catalog.html">Хочу сюда!</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
     </div>
     <main class="main-container">
-        <div class="page-container">
+        <div class="container">
             <div class="welcome-block">
                 <img class="welcome-title" src="img/welcome-title.svg" alt="Welcome to gorgeous sedona ">
                 <img class="welcome-block-divider" src="#" alt="">
@@ -100,31 +102,31 @@
     </main>
 
     <footer class="main-footer">
+        <div class="container">
+            <section class="mailing">
+                <h2 class="mailing-head">Подпишитесь на рассылку</h2>
+                <p class="mailing-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+                <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="enter-e-mail">e-mail</label>
+                    <input class="mailing-input-font" type="text" id="enter-e-mail" name="enter-e-mail" placeholder="Ваш e-mail">
+                    <button class="button mailing-button" type="submit">Подписаться</button>
+                </form>
+            </section>
+            <div class="footer-info">
+                <div class="footer-social">
+                    <a class="social-button" href="https://twitter.com/htmlacademy_ru">Tw</a>
+                    <a class="social-button" href="https://www.facebook.com/htmlacademy">Fb</a>
+                    <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">YT</a>
+                </div>
+                <div class="footer-phone">
+                    <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                </div>
 
-        <section class="mailing">
-            <h2 class="mailing-head">Подпишитесь на рассылку</h2>
-            <p class="mailing-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-            <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="visually-hidden" for="enter-e-mail">e-mail</label>
-                <input class="mailing-input-font" type="text" id="enter-e-mail" name="enter-e-mail" placeholder="Ваш e-mail">
-                <button class="button mailing-button" type="submit">Подписаться</button>
-            </form>
-        </section>
-        <div class="footer-container">
-            <div class="footer-social">
-                <a class="social-button" href="https://twitter.com/htmlacademy_ru">Tw</a>
-                <a class="social-button" href="https://www.facebook.com/htmlacademy">Fb</a>
-                <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">YT</a>
-            </div>
-            <div class="footer-phone">
-                <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            </div>
-
-            <div class="footer-copyright">
-                <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy"></a>
+                <div class="footer-copyright">
+                    <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy"></a>
+                </div>
             </div>
         </div>
-
     </footer>
 </body>
 

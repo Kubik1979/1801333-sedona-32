@@ -32,7 +32,7 @@ body {
     flex-grow: 1;
 }
 
-.page-container {
+.container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -116,10 +116,8 @@ body {
     flex-direction: column;
 }
 
-.footer-container {
+.footer-info {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .footer-social {
@@ -401,8 +399,7 @@ body {
     text-decoration: none;
 }
 
-.favorit-button-hotel,
-{
+.favorit-button-hotel {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
