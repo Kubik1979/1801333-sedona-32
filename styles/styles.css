@@ -42,13 +42,14 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .site-navigation {
     width: 531px;
     margin: 0;
     padding: 0;
-    padding-left: 71px;
     list-style: none;
 }
 
@@ -124,20 +125,17 @@ body {
 
 .footer-info {
     display: flex;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .footer-social {
     width: 240px;
     align-self: center;
-    padding-left: 72px;
 }
 
 .footer-copyright {
     width: 240px;
-}
-
-.footer-htmlacademy-link {
-    padding-right: 72px;
 }
 
 .main-nav-link {
@@ -356,23 +354,28 @@ body {
     flex-direction: column;
 }
 
+.inner-nav {
+    padding-left: 73px;
+}
+
 .inner-nav-list {
-    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 .catalog-filter {
     display: flex;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .catalog-filter-group-infrastucture {
     width: 150px;
-    margin-right: 67px;
-    margin-left: 71px;
 }
 
 .catalog-filter-group-housing-type {
     width: 150px;
-    margin-right: 167px;
 }
 
 .catalog-filter-group-cost {
@@ -393,7 +396,6 @@ body {
 
 .result-item {
     display: flex;
-    width: 1200px;
     margin: 0 auto;
 }
 
