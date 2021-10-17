@@ -12,16 +12,16 @@
         <header class="main-header">
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li><a class="main-nav-link navigation-link" href="index.html">Главная</a></li>
-                    <li><a class="main-nav-link navigation-link" href="#">О Седоне</a></li>
-                    <li><a class="main-nav-link navigation-link main-nav-link-current">Гостиницы</a></li>
+                    <li><a class="navigation-link" href="index.html">Главная</a></li>
+                    <li><a class="navigation-link" href="#">О Седоне</a></li>
+                    <li><a class="navigation-link">Гостиницы</a></li>
                 </ul>
                 <a class="main-page-logo" href="index.html"><img src="img/main-page-logo.svg" alt="Лого">
                 </a>
-                <ul class="user-navigation">
-                    <li><a class="main-nav-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
-                    <li><a class="main-nav-link" href="#"><span class="visually-hidden">Избранное</span></a></li>
-                    <li><a class="main-nav-link main-nav-link-current-here" href="catalog.html">Хочу сюда!</a></li>
+                <ul class="site-navigation user-navigation">
+                    <li><a class="user-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
+                    <li><a class="user-link" href="#"><span class="visually-hidden">Избранное</span></a></li>
+                    <li><a class="user-link want-button" href="catalog.html">Хочу сюда!</a></li>
                 </ul>
             </nav>
         </header>
@@ -83,7 +83,7 @@
                 </form>
             </section>
             <section class="hotel-sorting">
-                <!-- <h2 class="visually-hidden hotel-sort-head">Сортировка гостиниц</h2> -->
+                <h2 class="visually-hidden hotel-sort-head">Сортировка гостиниц</h2>
                 <p class="sorting-head">Найдено гостиниц: 38</p>
                 <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
                     <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -91,12 +91,14 @@
           <option class="cheap-before" value="cheap">Сначала дешевые</option>
         </select>
                 </form>
-                <a href="#" class="button-tile"><span class="visually-hidden">Показать карточки</span></a>
-                <a href="#" class="button-slideshow"><span class="visually-hidden">Показать слайды</span></a>
-                <a href="#" class="button button-list"><span class="visually-hidden">Показать список</span></a>
+                <ul class="sorting-button-list">
+                    <li class="sorting-button-item"><a href="#" class="button-tile"><span class="visually-hidden">Показать карточки</span></a></li>
+                    <li class="sorting-button-item"><a href="#" class="button-slideshow"><span class="visually-hidden">Показать слайды</span></a></li>
+                    <li class="sorting-button-item"><a href="#" class="button-list"><span class="visually-hidden">Показать список</span></a></li>
+                </ul>
             </section>
             <section class="results-block">
-                <!-- <h2 class="visually-hidden hotel-katalog-head">Каталог гостиниц Седоны</h2> -->
+                <h2 class="visually-hidden hotel-katalog-head">Каталог гостиниц Седоны</h2>
                 <article class="result-item">
                     <div class="result-image">
                         <a href="#"><img src="img/amara-resort-spa.jpg" width="180" height="120" alt="гостиница Amara resort &spa"></a>
@@ -201,35 +203,37 @@
 
                 </article>
             </section>
-            <div class="download-more-flex">
-                <button class="button download-more" type="button">Загрузить ещё</button>
+            <div class="download-more-button">
+                <button class="download-more" type="button">Загрузить ещё</button>
             </div>
-            <ul class="pagination">
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">4</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">10</a>
-                </li>
-            </ul>
-            <form class="select-number-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="page-hotel-number" for="number-hotel-sorting">Гостиниц на странице</label>
-                <select class="select-number" id="number-hotel-sorting" name="hotel-sorting">
+            <div class="pagination-flex">
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#">4</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#">...</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#">10</a>
+                    </li>
+                </ul>
+                <form class="select-number-form" action="https://echo.htmlacademy.ru/" method="get">
+                    <label class="page-hotel-number" for="number-hotel-sorting">Гостиниц на странице</label>
+                    <select class="select-number" id="number-hotel-sorting" name="hotel-sorting">
           <option class="number-of-pages" value="number">4</option>
         </select>
-            </form>
+                </form>
+            </div>
 
         </main>
         <footer class="main-footer">
@@ -244,9 +248,11 @@
             </section>
             <div class="footer-info">
                 <div class="footer-social">
-                    <a class="social-button" href="https://twitter.com/htmlacademy_ru">Tw</a>
-                    <a class="social-button" href="https://www.facebook.com/htmlacademy">Fb</a>
-                    <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">YT</a>
+                    <ul class="footer-social-list">
+                        <li class="footer-social-item"><a class="social-button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">TW</span></a></li>
+                        <li class="footer-social-item"><a class="social-button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">FB</span></a></li>
+                        <li class="footer-social-item"><a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">YT</span></a></li>
+                    </ul>
                 </div>
                 <div class="footer-phone">
                     <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
