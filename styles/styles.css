@@ -351,11 +351,12 @@
     }
 
     .selection-block {
+        display: flex;
+        flex-direction: column;
         background-image: url("../img/catalog-background.png");
         background-repeat: no-repeat;
         background-position: center;
         width: 1200px;
-        background-size: cover;
         background-color: #756257;
     }
 
@@ -400,11 +401,6 @@
         padding: 0;
     }
 
-    .selection-block {
-        display: flex;
-        flex-direction: column;
-    }
-
     .inner-nav {
         padding-left: 73px;
     }
@@ -419,6 +415,7 @@
         display: flex;
         padding-left: 72px;
         padding-right: 72px;
+        padding-bottom: 83px;
     }
 
     .catalog-filter-group-infrastucture {
@@ -472,6 +469,12 @@
         font-size: 20px;
         line-height: 26px;
         color: #FFFFFF;
+    }
+
+    .catalog-filter-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .catalog-filter-item {
