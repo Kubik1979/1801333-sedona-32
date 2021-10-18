@@ -96,6 +96,31 @@
         padding: 51px 371px 82px 371px;
     }
 
+    .discription-text {
+        padding-left: 240px;
+        padding-right: 240px;
+        padding-top: 63px;
+        padding-bottom: 79px;
+    }
+
+    .discription-text-head {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+    }
+
+    .discription-text-reasons {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 36px;
+        text-align: center;
+        color: #333333;
+        margin: 0;
+    }
+
     .real-town {
         display: flex;
     }
@@ -203,16 +228,6 @@
         line-height: 26px;
     }
 
-    .sedona-head {
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 36px;
-        text-align: center;
-        text-transform: uppercase;
-        margin-top: 63px;
-        margin-bottom: 23px;
-    }
-
     .interest-head {
         font-weight: bold;
         font-size: 30px;
@@ -255,15 +270,6 @@
 
     .backround-type-3 {
         background-color: rgba(131, 179, 211, 0.2);
-    }
-
-    .five-reasons {
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 36px;
-        text-align: center;
-        color: #333333;
-        margin-bottom: 79px;
     }
 
     .welcome-block {
