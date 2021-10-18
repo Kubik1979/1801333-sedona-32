@@ -51,8 +51,7 @@
 
     .main-navigation {
         display: flex;
-        margin: 0 auto;
-        padding-left: 59px;
+        padding-left: 72px;
         padding-right: 72px;
     }
 
@@ -60,6 +59,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        width: 460px;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -67,14 +67,15 @@
 
     .main-page-logo {
         width: 138px;
-        margin-left: 118px;
-        margin-right: 209px;
     }
 
     .user-navigation {
-        margin-left: auto;
+        margin: 0;
         list-style: none;
         padding: 0;
+        width: 460px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
     }
 
     .user-link {
@@ -191,11 +192,10 @@
         color: #000000;
     }
 
-    .navigation-link {
+    .site-navigation-link {
         display: block;
         margin: 0;
-        padding: 12px;
-        margin-right: 9px;
+        margin-right: 33px;
         text-decoration: none;
         color: #000000;
         font-weight: bold;
