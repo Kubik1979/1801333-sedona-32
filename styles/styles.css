@@ -525,8 +525,9 @@
     .result-item {
         border-bottom: 1px solid var(--basic-light-grey-3);
         display: grid;
-        grid-template-columns: auto auto 1fr;
+        grid-template-columns: 80px 1fr 160px;
         padding: 30px 73px;
+        column-gap: 36px;
     }
 
     .rating-item {
@@ -536,8 +537,10 @@
         align-items: flex-end;
     }
 
-    .obertka {
-        display: flex;
+    .result-description {
+        display: grid;
+        grid-template-columns: 151px 160px auto;
+        grid-template-rows: repeat(3, min-content);
     }
 
     .result-description-header {
@@ -547,13 +550,14 @@
         color: #000000;
         padding: 0px;
         margin: 0px;
-        height: 37px;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
     }
 
     .result-image {
         width: 180px;
         height: 120px;
-        margin-right: 37px;
+        object-fit: contain;
     }
 
     .inner-nav-item-current {
@@ -603,6 +607,8 @@
         font-size: 18px;
         line-height: 23px;
         color: #333333;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 
     .price-of-housing {
