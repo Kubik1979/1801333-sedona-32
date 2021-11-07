@@ -12,15 +12,16 @@
         <header class="main-header">
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li><a class="site-navigation-link" href="index.html">Главная</a></li>
+                    <li>
+                        <a class="site-navigation-link" href="index.html">Главная</a></li>
                     <li><a class="site-navigation-link" href="#">О Седоне</a></li>
-                    <li><a class="site-navigation-link">Гостиницы</a></li>
+                    <li><a class="site-navigation-link site-navigation-link-current">Гостиницы</a></li>
                 </ul>
                 <a class="main-page-logo" href="index.html"><img src="img/main-page-logo.svg" alt="Лого">
                 </a>
                 <ul class="site-navigation user-navigation">
-                    <li><a class="user-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
-                    <li><a class="user-link" href="#"><span class="visually-hidden">Избранное</span></a></li>
+                    <li><a class="user-link lens-icon" href="#"><span class="visually-hidden">Поиск</span></a></li>
+                    <li><a class="user-link heart-icon" href="#"><span class="visually-hidden">Избранное</span></a></li>
                     <li><a class="user-link want-button" href="catalog.html">Хочу сюда!</a></li>
                 </ul>
             </nav>
@@ -30,8 +31,12 @@
                 <h1 class="catalog-main-head">Гостиницы Седоны</h1>
                 <div class="inner-nav">
                     <ul class="inner-nav-list">
-                        <li><a class="inner-nav-item" href="index.html"><span class="visually-hidden">Главная</span></a></li>
-                        <li><a class="inner-nav-item inner-nav-item-current">Гостиницы</a></li>
+                        <li>
+                            <a class="inner-nav-item" href="index.html"><img src="img/home-page-icon.svg" alt="иконка домашней страницы"><span class="visually-hidden">Главная</span></a>
+                        </li>
+                        <li>
+                            <a class="inner-nav-item-current"><img class="nav-hotel-icon" src="img/nav-hotel-icon.svg" alt="иконка текущей страницы">Гостиницы</a>
+                        </li>
                     </ul>
                 </div>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -94,9 +99,9 @@
         </select>
                 </form>
                 <ul class="sorting-button-list">
-                    <li class="sorting-button-item"><a href="#" class="button-tile"><span class="visually-hidden">Показать карточки</span></a></li>
-                    <li class="sorting-button-item"><a href="#" class="button-slideshow"><span class="visually-hidden">Показать слайды</span></a></li>
-                    <li class="sorting-button-item"><a href="#" class="button-list"><span class="visually-hidden">Показать список</span></a></li>
+                    <li class="sorting-button-item"><a class="sorting-button-link button-tile" href="#"><span class="visually-hidden">Показать карточки</span></a></li>
+                    <li class="sorting-button-item"><a class="sorting-button-link button-slideshow" href="#"><span class="visually-hidden">Показать слайды</span></a></li>
+                    <li class="sorting-button-item"><a class="sorting-button-link button-list" href="#"><span class="visually-hidden">Показать список</span></a></li>
                 </ul>
             </section>
             <section class="results-block">
@@ -112,11 +117,12 @@
                     </div>
                     <div class="rating-item">
                         <div class="rating-stars">
-                            <span class="icon-star">****</span>
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
                         </div>
-                        <div class="rating-level">
-                            <span class="rating-table">Рейтинг: 8,5</span>
-                        </div>
+                        <span class="rating-table">Рейтинг: 8,5</span>
                     </div>
 
                 </article>
@@ -133,13 +139,12 @@
 
                     <div class="rating-item">
                         <div class="rating-stars">
-                            <span class="icon-star">***</span>
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
                         </div>
-                        <div class="rating-level">
-                            <span class="rating-table">Рейтинг: 8,9</span>
-                        </div>
+                        <span class="rating-table">Рейтинг: 8,9</span>
                     </div>
-
                 </article>
                 <article class="result-item">
                     <a class="result-image" href="#"><img src="img/villas-at-poco-diablo.jpg" width="180" height="120" alt="апартаменты Villas at Poco Diablo"></a>
@@ -153,11 +158,10 @@
                     </div>
                     <div class="rating-item">
                         <div class="rating-stars">
-                            <span class="icon-star">**</span>
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
                         </div>
-                        <div class="rating-level">
-                            <span class="rating-table">Рейтинг: 9,2</span>
-                        </div>
+                        <span class="rating-table">Рейтинг: 9,2</span>
                     </div>
 
                 </article>
@@ -172,11 +176,10 @@
                     </div>
                     <div class="rating-item">
                         <div class="rating-stars">
-                            <span class="icon-star">**</span>
+                            <img src="img/star-icon.svg" alt="иконка звезда">
+                            <img src="img/star-icon.svg" alt="иконка звезда">
                         </div>
-                        <div class="rating-level">
-                            <span class="rating-table">Рейтинг: 9,2</span>
-                        </div>
+                        <span class="rating-table">Рейтинг: 9,2</span>
                     </div>
 
                 </article>
@@ -227,9 +230,15 @@
             <div class="footer-info">
                 <div class="footer-social">
                     <ul class="footer-social-list">
-                        <li class="footer-social-item"><a class="social-button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">TW</span></a></li>
-                        <li class="footer-social-item"><a class="social-button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">FB</span></a></li>
-                        <li class="footer-social-item"><a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">YT</span></a></li>
+                        <li class="footer-social-item">
+                            <a class="social-button" href="https://twitter.com/htmlacademy_ru"><img src="img/twitter-icon.svg" alt="иконка twitter"><span class="visually-hidden">TW</span></a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="social-button" href="https://www.facebook.com/htmlacademy"><img src="img/facebook-icon.svg" alt="иконка facebook"><span class="visually-hidden">FB</span></a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="img/youtube-icon.svg" alt="иконка youtube"><span class="visually-hidden">YT</span></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer-phone">
@@ -237,7 +246,7 @@
                 </div>
 
                 <div class="footer-copyright">
-                    <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy"></a>
+                    <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/"></a>
                 </div>
             </div>
         </footer>
