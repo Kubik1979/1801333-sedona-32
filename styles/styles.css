@@ -122,6 +122,7 @@
     .main-page-logo {
         width: 138px;
         height: 65px;
+        position: relative;
     }
 
     .user-navigation {
@@ -168,12 +169,42 @@
         background-image: url("../img/search-active.svg");
     }
 
+    .number-of-hearts {
+        position: relative;
+        text-decoration: none;
+        width: 19px;
+        height: 19px;
+        background: #7DB550;
+        border-radius: 50%;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 13px;
+        text-align: center;
+        letter-spacing: -0.1em;
+        color: #FFFFFF;
+    }
+
+    .number-of-hearts::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
     .heart-icon {
-        padding: 20px;
-        margin-right: 20px;
+        display: inline-block;
+        padding: 7px 7px;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        outline: none;
+        width: 18px;
+        height: 18px;
+        margin-right: 21px;
+        box-sizing: content-box;
         background-image: url("../img/heart-icon.svg");
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: center;
     }
 
     .heart-icon:hover {
@@ -443,6 +474,22 @@
         color: #000000;
     }
 
+    .hotel-link:hover {
+        color: #756257;
+    }
+
+    .hotel-link:focus {
+        color: #756257;
+        border: 3px solid #83B3D3;
+        margin-left: -21px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .hotel-link:active {
+        color: rgba(117, 98, 87, 0.3);
+    }
+
     .mailing {
         background-image: url("../img/mailing-background.png");
         background-repeat: no-repeat;
@@ -478,7 +525,7 @@
         margin: 0;
     }
 
-    .mailing-input-font {
+    .mailing-input {
         font-weight: normal;
         font-size: 18px;
         line-height: 26px;
@@ -487,19 +534,21 @@
         border-radius: 10px 0px 0px 10px;
         height: 60px;
         width: 600px;
+        border: none;
     }
 
-    .mailing-input-font:hover {
+    .mailing-input:hover {
         background: #E6E6E6;
     }
 
-    .mailing-input-font:focus {
+    .mailing-input:focus {
         background: #E6E6E6;
-        border: 3px solid #83B3D3;
+        outline: 3px solid #83B3D3;
+        outline-offset: -3px;
     }
 
-    .mailing-input-font:active {
-        border: 2px solid #000000;
+    .mailing-input:active {
+        outline: 2px solid #000000;
     }
 
     .mailing-button {
@@ -514,6 +563,7 @@
         background: #83B3D3;
         border-radius: 0px 10px 10px 0px;
         cursor: pointer;
+        border: none;
     }
 
     .mailing-button:hover {
@@ -522,8 +572,8 @@
 
     .mailing-button:focus {
         background: #68A2CA;
-        border-radius: 0px 10px 10px 0px;
-        border: 3px solid #756257;
+        outline: 3px solid #756257;
+        outline-offset: -3px;
     }
 
     .mailing-button:active {
@@ -564,7 +614,7 @@
         flex-wrap: wrap;
     }
 
-    .social-button {
+    .social-button svg {
         display: inline-block;
         padding: 10px 10px;
         border: 3px solid transparent;
@@ -578,20 +628,23 @@
         margin-bottom: 33px;
     }
 
-    .social-button:hover path {
+    .social-button svg:hover path {
         fill: #68A2CA;
     }
 
-    .social-button:focus path {
+    .social-button svg:focus path {
         fill: #68A2CA;
     }
 
     .social-button:focus {
         border: 3px solid #83B3D3;
         border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        box-sizing: content-box;
     }
 
-    .social-button:active path {
+    .social-button svg:active path {
         fill: rgba(104, 162, 202, 0.3);
     }
 
@@ -873,6 +926,9 @@
     .result-image {
         width: 180px;
         height: 120px;
+    }
+
+    .result-image img {
         object-fit: contain;
     }
 
@@ -881,7 +937,7 @@
     }
 
     .result-image:focus {
-        border: 3px solid #83B3D3;
+        outline: 3px solid #83B3D3;
     }
 
     .result-image:active {
@@ -916,12 +972,17 @@
         color: rgba(255, 255, 255, 0.3);
     }
 
+    .marker-icon {
+        padding-right: 10px;
+    }
+
     .inner-nav-item-current {
         display: inline-block;
         padding: 5px 5px;
         border: 3px solid transparent;
         border-radius: 4px;
         outline: none;
+        text-decoration: none;
         font-weight: normal;
         font-size: 16px;
         line-height: 21px;
@@ -1193,7 +1254,7 @@
 
     .button-apply:focus {
         background-color: #68A2CA;
-        border: 3px solid #FFFFFF;
+        border: 3px solid #756257;
     }
 
     .button-apply:active {
@@ -1246,6 +1307,20 @@
         padding-top: 12px;
         padding-bottom: 13px;
         cursor: pointer;
+    }
+
+    .download-more-button:hover {
+        background-color: #68A2CA;
+    }
+
+    .download-more-button:focus {
+        background-color: #68A2CA;
+        border: 3px solid #756257;
+    }
+
+    .download-more-button:active {
+        background-color: #68A2CA;
+        color: rgba(255, 255, 255, 0.3);
     }
 
     .pagination-flex {
