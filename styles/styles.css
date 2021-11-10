@@ -803,14 +803,32 @@
 
     .button-tile {
         background-image: url(../img/tile-icon.svg);
+        border: 2px solid #E6E6E6;
+        border-radius: 4px
     }
 
     .button-slideshow {
         background-image: url(../img/slideshow-icon.svg);
+        border: 2px solid #E6E6E6;
+        border-radius: 4px
     }
 
     .button-list {
         background-image: url(../img/list-icon.svg);
+        border: 2px solid #E6E6E6;
+        border-radius: 4px;
+    }
+
+    .button-list:hover {
+        border: 2px solid #83B3D3;
+    }
+
+    .button-list:focus {
+        border: 2px solid #83B3D3;
+    }
+
+    .button-list:active {
+        border: 2px solid #000000;
     }
 
     .results-block {
@@ -856,6 +874,18 @@
         width: 180px;
         height: 120px;
         object-fit: contain;
+    }
+
+    .result-image:hover {
+        opacity: 0.6;
+    }
+
+    .result-image:focus {
+        border: 3px solid #83B3D3;
+    }
+
+    .result-image:active {
+        opacity: 0.3;
     }
 
     .inner-nav-item {
@@ -1115,6 +1145,19 @@
         border-radius: 4px;
     }
 
+    .select-control:hover {
+        border: 2px solid #83B3D3;
+    }
+
+    .select-control:focus {
+        border: 2px solid #83B3D3;
+    }
+
+    .select-control:active {
+        border: 2px solid #E6E6E6;
+        color: rgba(51, 51, 51, 0.3);
+    }
+
     .cheap-before {
         font-weight: normal;
         font-size: 18px;
@@ -1235,6 +1278,20 @@
         margin-bottom: 89px;
     }
 
+    .pagination-link:hover {
+        background-color: #68A2CA;
+    }
+
+    .pagination-link:focus {
+        background-color: #999da0;
+        border: 3px solid #756257;
+    }
+
+    .pagination-link:active {
+        background-color: #999da0;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
     .pagination-link:nth-child(6) {
         margin-right: 0;
     }
@@ -1243,10 +1300,18 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 26px;
+        display: flex;
+        justify-content: center;
         align-items: center;
         color: #000000;
         background-color: #F2F2F2;
         border-radius: 4px;
+        text-decoration: none;
+        width: 55px;
+        height: 55px;
+        margin-right: 8px;
+        margin-top: 31px;
+        margin-bottom: 89px;
     }
 
     .select-number-form {
