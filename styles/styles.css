@@ -143,9 +143,8 @@
     .lens-icon {
         display: inline-block;
         padding: 7px 7px;
-        border: 3px solid transparent;
+        outline: 3px solid transparent;
         border-radius: 10px;
-        outline: none;
         width: 18px;
         height: 18px;
         margin-right: 21px;
@@ -170,7 +169,7 @@
     }
 
     .number-of-hearts {
-        position: relative;
+        position: absolute;
         text-decoration: none;
         width: 19px;
         height: 19px;
@@ -182,22 +181,20 @@
         text-align: center;
         letter-spacing: -0.1em;
         color: #FFFFFF;
+        left: 15px;
+        bottom: 15px;
     }
 
-    .number-of-hearts::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        right: 5px;
-        top: 5px;
+    .number-of-hearts:active {
+        color: rgba(255, 255, 255, 0.3);
     }
 
     .heart-icon {
         display: inline-block;
+        position: relative;
         padding: 7px 7px;
-        border: 3px solid transparent;
+        outline: 3px solid transparent;
         border-radius: 10px;
-        outline: none;
         width: 18px;
         height: 18px;
         margin-right: 21px;
@@ -213,9 +210,6 @@
 
     .heart-icon:focus {
         background-image: url("../img/heart-hover.svg");
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         border: 3px solid #83B3D3;
         border-radius: 10px;
     }
@@ -614,12 +608,12 @@
         flex-wrap: wrap;
     }
 
-    .social-button svg {
+    .social-button {
         display: inline-block;
         padding: 10px 10px;
-        border: 3px solid transparent;
+        outline: 3px solid transparent;
+        outline-offset: -3px;
         border-radius: 10px;
-        outline: none;
         box-sizing: content-box;
         width: 18px;
         height: 18px;
@@ -637,10 +631,8 @@
     }
 
     .social-button:focus {
-        border: 3px solid #83B3D3;
-        border-radius: 10px;
-        width: 40px;
-        height: 40px;
+        outline: 3px solid #83B3D3;
+        outline-offset: -3px;
         box-sizing: content-box;
     }
 
