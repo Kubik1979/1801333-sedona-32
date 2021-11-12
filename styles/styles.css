@@ -144,6 +144,7 @@
         display: inline-block;
         padding: 7px 7px;
         outline: 3px solid transparent;
+        outline-offset: -3px;
         border-radius: 10px;
         width: 18px;
         height: 18px;
@@ -160,8 +161,8 @@
 
     .lens-icon:focus {
         background-image: url("../img/search-hover.svg");
-        border: 3px solid #83B3D3;
-        border-radius: 10px
+        outline: 3px solid #83B3D3;
+        outline-offset: -3px;
     }
 
     .lens-icon:active {
@@ -193,6 +194,7 @@
         position: relative;
         padding: 7px 7px;
         outline: 3px solid transparent;
+        outline-offset: -3px;
         border-radius: 10px;
         width: 18px;
         height: 18px;
@@ -209,8 +211,8 @@
 
     .heart-icon:focus {
         background-image: url("../img/heart-hover.svg");
-        border: 3px solid #83B3D3;
-        border-radius: 10px;
+        outline: 3px solid #83B3D3;
+        outline-offset: -3px;
     }
 
     .heart-icon:active {
@@ -454,7 +456,8 @@
 
     .search-button:focus {
         background: #615048;
-        border: 3px solid #83B3D3;
+        outline: 3px solid #83B3D3;
+        outline-offset: -3px;
     }
 
     .search-button:active {
@@ -828,7 +831,6 @@
         height: 48px;
         margin-top: 44px;
         margin-right: 8px;
-        border: 2px solid #E6E6E6;
         box-sizing: border-box;
         border-radius: 4px;
     }
@@ -863,16 +865,23 @@
         border-radius: 4px;
     }
 
+    .button-tile:hover,
+    .button-slideshow:hover,
     .button-list:hover {
-        border: 2px solid #83B3D3;
+        outline: 2px solid #83B3D3;
     }
 
+    .button-tile:focus,
+    .button-slideshow:focus,
     .button-list:focus {
-        border: 2px solid #83B3D3;
+        outline: 2px solid #83B3D3;
     }
 
+    .button-tile:active,
+    .button-slideshow:active,
     .button-list:active {
-        border: 2px solid #000000;
+        outline: 2px solid #000000;
+        outline-offset: -2px;
     }
 
     .results-block {
@@ -938,16 +947,17 @@
     .inner-nav-item {
         display: inline-block;
         padding: 7px 7px;
-        border: 3px solid transparent;
+        outline: 3px solid transparent;
+        outline-offset: -3px;
         border-radius: 4px;
-        outline: none;
         width: 18px;
         height: 17px;
         box-sizing: content-box;
         background-image: url(../img/home-page-icon.svg);
         background-repeat: no-repeat;
         background-position: center;
-        margin-right: 10px;
+        margin-right: 4px;
+        margin-top: 1px;
     }
 
     .inner-nav-item:hover {
@@ -956,23 +966,20 @@
 
     .inner-nav-item:focus {
         color: rgba(255, 255, 255, 0.6);
-        border: 3px solid #83B3D3;
+        outline: 3px solid #83B3D3;
+        outline-offset: -3px;
     }
 
     .inner-nav-item:active {
         color: rgba(255, 255, 255, 0.3);
     }
 
-    .marker-icon {
-        padding-right: 10px;
-    }
-
     .inner-nav-item-current {
         display: inline-block;
         padding: 5px 5px;
-        border: 3px solid transparent;
+        outline: 3px solid transparent;
+        outline-offset: -3px;
         border-radius: 4px;
-        outline: none;
         text-decoration: none;
         font-weight: normal;
         font-size: 16px;
@@ -980,6 +987,7 @@
         color: #FFFFFF;
         box-sizing: content-box;
         cursor: pointer;
+        margin-top: 5px;
     }
 
     .inner-nav-item-current:hover {
@@ -993,6 +1001,11 @@
 
     .inner-nav-item-current:active {
         color: rgba(255, 255, 255, 0.3);
+    }
+
+    .marker-icon {
+        margin-top: 16px;
+        margin-right: 10px;
     }
 
     catalog-filter-group {
@@ -1306,7 +1319,8 @@
 
     .download-more-button:focus {
         background-color: #68A2CA;
-        border: 3px solid #756257;
+        outline: 3px solid #756257;
+        outline-offset: -3px;
     }
 
     .download-more-button:active {
