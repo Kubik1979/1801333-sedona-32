@@ -1175,7 +1175,45 @@
         .control-input[type="checkbox"]:checked+.control-mark::before,
         .control-input[type="checkbox"]:checked+.control-mark::after {
             position: absolute;
+            display: inline-block;
+            content: "";
+            width: 20px;
+            height: 20px;
             background-image: url(../img/tick-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .control-input[type="radio"]+.control-mark {
+            border-radius: 50%;
+        }
+
+        .control-input[type="radio"]:checked+.control-mark::before {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: #3F5E72;
+            border-radius: 50%;
+            content: "";
+        }
+
+        .square-mark:hover {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .square-mark:focus {
+            background: rgba(255, 255, 255, 0.6);
+            border: 3px solid #83B3D3;
+        }
+
+        .square-mark:active {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .round-mark {
+            border: 3px solid #83B3D3;
         }
 
         .tape-of-housing {
