@@ -20,41 +20,51 @@
                 </a>
                 <ul class="site-navigation user-navigation">
                     <li><a class="user-link lens-icon" href="#"><span class="visually-hidden">Поиск</span></a></li>
-                    <li><a class="user-link heart-icon" href="#"><span class="number-of-hearts">12</span><span class="visually-hidden">Избранное</span></a>
-                        <div class="popover popover-cart">
+                    <li class="navigation-link-svg"><a class="user-link heart-icon" href="#"><span class="number-of-hearts">12</span><span class="visually-hidden">Избранное</span></a>
+                        <div class="popover">
                             <div class="popover-content">
-                                <h2 class="popover-title visually-hidden">Избранное</h2>
-
-                                <article class="cart-item">
-                                    <a class="cart-result-image" href="#"><img src="img/desert-quail-inn.png" width="48" height="48" alt="мотель Desert quail inn"></a>
-                                    <div class="cart-hotel-item">
-                                        <a class="cart-hotel-link" href="#">Desert quail inn</a>
-                                        <p class="cart-living-type">Мотель</p>
-                                    </div>
-                                    <button type="button" class="cart-item-button button"><svg class="cart-basket" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M15.3 2.29999H13.1H2.8H0.6C0.3 2.29999 0 2.49999 0 2.79999C0 3.09999 0.3 3.39999 0.6 3.39999H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.39999H15.4C15.7 3.39999 16 3.09999 16 2.79999C16 2.49999 15.6 2.29999 15.3 2.29999ZM12.5 14.8H3.4V3.39999H12.5V14.8Z" fill="black"/>
-                                  <path d="M6.20001 1.2H9.60001C9.90001 1.2 10.2 0.9 10.2 0.6C10.2 0.3 10 0 9.70001 0H6.20001C5.90001 0 5.70001 0.3 5.70001 0.6C5.70001 0.9 5.90001 1.2 6.20001 1.2Z" fill="black"/>
-                                  <path d="M6.19998 12C6.49998 12 6.79998 11.7 6.79998 11.4V5.69998C6.79998 5.39998 6.49998 5.09998 6.19998 5.09998C5.89998 5.09998 5.59998 5.39998 5.59998 5.69998V11.4C5.69998 11.7 5.89998 12 6.19998 12Z" fill="black"/>
-                                  <path d="M9.69998 12C9.99998 12 10.3 11.7 10.3 11.4V5.69998C10.3 5.39998 9.99998 5.09998 9.69998 5.09998C9.39998 5.09998 9.09998 5.49998 9.09998 5.69998V11.4C9.09998 11.7 9.29998 12 9.69998 12Z" fill="black"/>
-                                  </svg>
-                                  </button>
-                                </article>
-                                <article class="cart-item">
-                                    <a class="cart-result-image" href="#"><img src="img/villas-at-poco-diablo.jpg" width="48" height="48" alt="апартаменты villas-at-poco-diablo"></a>
-                                    <div class="cart-hotel-item">
-                                        <a class="cart-hotel-link" href="#">Villas at Poco Diablo</a>
-                                        <p class="cart-living-type">Апартаменты</p>
-                                    </div>
-                                    <button type="button" class="cart-item-button button"><svg class="cart-basket" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.3 2.29999H13.1H2.8H0.6C0.3 2.29999 0 2.49999 0 2.79999C0 3.09999 0.3 3.39999 0.6 3.39999H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.39999H15.4C15.7 3.39999 16 3.09999 16 2.79999C16 2.49999 15.6 2.29999 15.3 2.29999ZM12.5 14.8H3.4V3.39999H12.5V14.8Z" fill="black"/>
-                                <path d="M6.20001 1.2H9.60001C9.90001 1.2 10.2 0.9 10.2 0.6C10.2 0.3 10 0 9.70001 0H6.20001C5.90001 0 5.70001 0.3 5.70001 0.6C5.70001 0.9 5.90001 1.2 6.20001 1.2Z" fill="black"/>
-                                <path d="M6.19998 12C6.49998 12 6.79998 11.7 6.79998 11.4V5.69998C6.79998 5.39998 6.49998 5.09998 6.19998 5.09998C5.89998 5.09998 5.59998 5.39998 5.59998 5.69998V11.4C5.69998 11.7 5.89998 12 6.19998 12Z" fill="black"/>
-                                <path d="M9.69998 12C9.99998 12 10.3 11.7 10.3 11.4V5.69998C10.3 5.39998 9.99998 5.09998 9.69998 5.09998C9.39998 5.09998 9.09998 5.49998 9.09998 5.69998V11.4C9.09998 11.7 9.29998 12 9.69998 12Z" fill="black"/>
+                                <ul class="popover-items-list">
+                                    <li class="popover-item">
+                                        <a class="popover-item-link" href="#">
+                                            <img class="hotel-card-image-small" src="img/small-desert-quail-inn.png" width="48" height="48" alt="Фото мотеля Desert Quail Inn">
+                                            <div class="popover-item-card">
+                                                <p class="popover-item-title">Desert Quail Inn</p>
+                                                <p class="popover-item-price-type">Мотель</p>
+                                            </div>
+                                        </a>
+                                        <button class="trash" type="button">
+                                <svg class="trash-svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                  <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                                  <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                                  <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                                  <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
                                 </svg>
-                                </button>
-                                </article>
+                                <span class="visually-hidden">Удалить из корзины</span>
+                              </button>
+                                    </li>
+                                    <li class="popover-item">
+                                        <a class="popover-item-link" href="#">
+                                            <img class="hotel-card-image-small" src="img/small-villas-at-poco-diablo.png" width="48" height="48" alt="Фото мотеля Desert Quail Inn">
+                                            <div class="popover-item-card">
+                                                <p class="popover-item-title">Villas at Poco Diablo</p>
+                                                <p class="popover-item-price-type">Апартаменты</p>
+                                            </div>
+                                        </a>
+                                        <button class="trash" type="button">
+                                <svg class="trash-svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                  <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                                  <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                                  <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                                  <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                                </svg>
+                                <span class="visually-hidden">Удалить из корзины</span>
+                              </button>
+                                    </li>
+                                    <div class="button-all">
+                                        <button class="button-all-favorites">ВСЕ ИЗБРАННЫЕ</button>
+                                    </div>
+                                </ul>
                             </div>
-                            <button class="button cart-select-button" type="submit">Все избранные</button>
                         </div>
                     </li>
                     <li><a class="user-link want-button" href="catalog.html">Хочу сюда!</a></li>
@@ -231,6 +241,69 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="modal-container">
+        <div class="modal search-hotel">
+            <button class="modal-close-button" type="button">
+          <svg class="close-svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <section class="modal-content">
+                <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="field-date-arrival">
+                        <label class="tittle-date-arrival" for="date-arrival">Дата заезда:</label>
+                        <input class="search-form-field" type="text" id="date-arrival" name="date-arrival" placeholder="Укажите дату">
+                        <p class="search-form-text">Мы не можем отправить вас в прошлое.</p>
+                    </div>
+
+                    <div class="field-date-exit">
+                        <label class="tittle-date-exit" for="date-exit">Дата выезда:</label>
+                        <input class="search-form-field" type="text" id="date-exit" name="date-exit" placeholder="Укажите дату">
+                        <p class="search-form-text">На эти даты есть свободные номера. Пока есть.</p>
+                    </div>
+
+                    <div class="adults">
+                        <label class="tittle-adults" for="date-exit">Взрослые:</label>
+                        <button class="minus" type="button">
+                <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+              </button>
+                        <input class="number-adults" type="number" id="number-adults" name="number-adults" value="2">
+                        <button class="plus" type="button">
+                <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                </svg>
+              </button>
+                    </div>
+                    <div class="tooltip-children">
+                        <button class="tooltip" type="button">
+                <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </button>
+                    </div>
+                    <div class="children">
+                        <label class="tittle-children" for="date-exit">Дети:</label>
+                        <button class="minus-children" type="button">
+                <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="none">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+              </button>
+                        <input class="number-children" type="number" id="number-children" name="number-children" value="1">
+                        <button class="plus-children" type="button">
+                <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                </svg>
+              </button>
+                    </div>
+                </form>
+                <div class="modal-bottom">
+                    <button class="modal-bottom-search" type="button">Найти</button>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 
