@@ -81,9 +81,14 @@ body {
     line-height: 26px;
     border: 3px solid transparent;
     border-radius: 10px;
+    margin-top: 9px;
     margin-bottom: 15px;
     padding: 6px 10px;
     outline: none;
+}
+
+.site-navigation-link:nth-child(1) {
+    margin-right: 8px;
 }
 
 .site-navigation-link:hover {
@@ -105,6 +110,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+    margin-left: -13px;
     pointer-events: none;
 }
 
@@ -114,7 +120,7 @@ body {
     position: absolute;
     left: 12px;
     right: 12px;
-    bottom: -20px;
+    bottom: -16px;
     height: 2px;
     background-color: #756257;
 }
@@ -159,7 +165,7 @@ body {
     border-radius: 10px;
     width: 18px;
     height: 18px;
-    margin-right: 21px;
+    margin-right: -5px;
     box-sizing: content-box;
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
@@ -233,28 +239,26 @@ body {
     background-image: url("../img/heart-active.svg");
 }
 
+.main-container {
+    margin-top: -3px;
+}
+
 .welcome-block {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../img/background-photo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1200px;
-}
-
-.welcome-title {
-    padding: 51px 371px 0px 371px;
-}
-
-.welcome-block-divider {
     margin: 0;
+    margin-bottom: 5px;
+    padding-top: 51px;
+    padding-bottom: 73px;
+    background-image: url(../img/welcome-divider.png), url(../img/background-photo.png);
+    background-color: #ddeaf5;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center;
 }
 
 .discription-text {
     padding-left: 240px;
     padding-right: 240px;
-    padding-top: 63px;
-    padding-bottom: 79px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .discription-text-head {
@@ -263,7 +267,7 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 23px;
+    margin-bottom: 33px;
 }
 
 .discription-text-reasons {
@@ -273,6 +277,7 @@ body {
     text-align: center;
     color: #333333;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .reason-block {
@@ -302,12 +307,20 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .reason-block-item {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
+    margin: 0;
+}
+
+.reason-block-number {
+    display: block;
+    margin-bottom: 30px;
 }
 
 .advantage-block-item {
@@ -439,7 +452,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .search-input {
@@ -448,7 +461,7 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
-    margin-bottom: 73px;
+    margin-bottom: 58px;
 }
 
 .search-button {
@@ -532,6 +545,7 @@ body {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
+    margin-bottom: -7px;
 }
 
 .mailing-text {
@@ -541,6 +555,8 @@ body {
     padding-bottom: 47px;
     line-height: 26px;
     color: #ffffff;
+    font-weight: normal;
+    font-size: 22px;
 }
 
 .mailing-form {
@@ -703,7 +719,7 @@ body {
 .footer-contacts-phone {
     width: 361px;
     height: 52px;
-    padding: 6px 15px 6px 15px;
+    padding: 10px 15px 10px 15px;
     font-size: 40px;
     line-height: 40px;
     color: #000000;
@@ -727,14 +743,14 @@ body {
     opacity: 0.3;
 }
 
-.footer-about {
+.footer-copyright {
     max-width: 115px;
     margin-left: auto;
     margin-right: 97px;
     margin-top: -14px;
 }
 
-.htmlacademy-link {
+.footer-copyright-link {
     display: inline-block;
     padding: 20px 13px;
     border: 3px solid transparent;
@@ -742,7 +758,7 @@ body {
     outline: none;
 }
 
-.htmlacademy-link:focus:not(:active) {
+.footer-copyright-link:focus:not(:active) {
     border-color: #83B3D3;
 }
 
